@@ -86,7 +86,7 @@ const DynamicTable = () => {
             type="text"
             value={tableData.headers[col]}
             onChange={(e) => updateHeader(col, e.target.value)}
-            placeholder="Player Name"
+            placeholder="Deltaker"
           />
         </th>
       );
@@ -133,9 +133,9 @@ const DynamicTable = () => {
         </table>
         <div className='flex gap-2 mt-2'>
 
-        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={addRow}>+ Row</button>
-        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={addColumn}>+ Player</button>
-        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"  onClick={deleteColumn}>- Player</button>
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={addRow}>+ Rad</button>
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={addColumn}>+ Spelar</button>
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"  onClick={deleteColumn}>- Spelar</button>
         </div>
       </>
     );
