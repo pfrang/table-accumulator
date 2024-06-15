@@ -141,6 +141,7 @@ const DynamicTable = () => {
     );
   };
 
+
   return <div className='px-2 pt-2'>{renderTable()}</div>;
 };
 
