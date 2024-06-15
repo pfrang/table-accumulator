@@ -81,7 +81,7 @@ const DynamicTable = () => {
     const headerCells = [];
     for (let col = 0; col < tableData.columns; col++) {
       headerCells.push(
-        <th key={`header-${col}`} className='border-2 border-black'>
+        <th key={`header-${col}`} style={{ maxWidth: '100px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} className='border-2 border-black'>
           <input
             type="text"
             value={tableData.headers[col]}
@@ -97,7 +97,7 @@ const DynamicTable = () => {
       const cells = [];
       for (let col = 0; col < tableData.columns; col++) {
         cells.push(
-          <td key={`${row}-${col}`} className='border-2 border-black'>
+          <td key={`${row}-${col}`} style={{ maxWidth: '100px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} className='border-2 border-black'>
             <input
             className='w-full'
               type="number"
@@ -122,7 +122,7 @@ const DynamicTable = () => {
 
     return (
       <>
-        <table style={{ border: '1px solid black', borderCollapse: 'collapse' }}>
+        <table style={{ border: '1px solid black', borderCollapse: 'collapse', tableLayout: "auto" }}>
           <thead>
             <tr>{headerCells}</tr>
           </thead>
